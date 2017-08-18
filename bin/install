@@ -1,0 +1,2 @@
+npm install -g git-release-notes
+open README.md
