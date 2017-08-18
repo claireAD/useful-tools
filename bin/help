@@ -1,0 +1,9 @@
+echo ""
+echo "***Git release notes***"
+echo Pour générer vos release notes, placez vous dans le dossier de votre projet, la commande est 
+echo "git-release-notes tag_v1..tag_v2 ../ADTools/git-release-notes/ad_markdown.ejs > changelog.markdown"
+echo ""
+echo "***Abandoned Strings***"
+echo Pour afficher les clés de wording iOS inutilisées
+echo "./AbandonedStrings /Users/your-username/path/to/source/code"
+echo ""
