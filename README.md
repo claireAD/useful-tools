@@ -2,7 +2,7 @@
 
 // installer git-release-notes
 
-$ bin/install
+$ ./bin/install
 
 //générer les releases notes
 
