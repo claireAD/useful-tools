@@ -1,2 +1,3 @@
+brew install npm
 npm install -g git-release-notes
 open README.md
