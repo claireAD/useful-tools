@@ -20,3 +20,10 @@ $ ./AbandonedStrings /Users/your-username/path/to/source/code
 
 // Utilisez la commande ./bin/generate_wording_ios pour iOS, résultat dans wording_iOS
 // Utilisez la commande ./bin/generate_wording_android pour Android, résultat dans wording_android
+
+***Update wording***
+
+//copier-coller le script "update_wording" dans le dossier de votre appli iOS, l'ouvrir
+// remplacer $DRIVE_WORDING_FILE_KEY, $PROJECT_NAME, $TARGET_NAME par les valeurs correspondant au projet
+// pour lancer la commande, faire ./update_wording
+// NB : vous devez avoir cloné ADLocalize dans votre dossier Sources et fait bundle install 

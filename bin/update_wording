@@ -1,0 +1,8 @@
+cd ../ADLocalize
+ruby bin/export -k $DRIVE_WORDING_FILE_KEY
+cp exports/ios/en.lproj/Localizable.strings ../$PROJECT_NAME/Ressources/$TARGET_NAME/en.lproj/Localizable.strings
+cp exports/ios/fr.lproj/Localizable.strings ../$PROJECT_NAME/Ressources/$TARGET_NAME/fr.lproj/Localizable.strings
+cd ../$PROJECT_NAME
+git add Ressources/$TARGET_NAME/en.lproj/Localizable.strings
+git add Ressources/$TARGET_NAME/fr.lproj/Localizable.strings
+git commit -m "Update wording"
