@@ -1,0 +1,7 @@
+sed 's/=/\,/g' Localizable.strings > ofile.txt
+sed 's/;//g' ofile.txt > pfile.txt
+sed 's/"//g' pfile.txt > wording_iOS.csv
+
+rm ofile.txt
+rm pfile.txt
+

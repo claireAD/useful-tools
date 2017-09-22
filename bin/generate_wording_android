@@ -1,0 +1,16 @@
+sed 's/<?xml version="1.0" encoding="utf-8"?>//g' strings.xml > ofile.txt
+sed 's/<resources>//g' ofile.txt > pfile.txt
+sed 's/<!--/\/\//g' pfile.txt > qfile.txt
+sed 's/-->//g' qfile.txt > rfile.txt
+sed 's/\<string name="//g' rfile.txt > sfile.txt
+sed 's/<\/string>//g' sfile.txt > tfile.txt
+sed 's/    //g' tfile.txt > ufile.txt
+sed 's/">/,/g' ufile.txt > wording_android.csv
+
+rm ofile.txt
+rm pfile.txt
+rm qfile.txt
+rm rfile.txt
+rm sfile.txt
+rm tfile.txt
+rm ufile.txt
