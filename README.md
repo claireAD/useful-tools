@@ -1,29 +1,38 @@
-***Git release Notes***
+## Git release Notes
 
-// installer git-release-notes
+install git-release-notes
 
-$ ./bin/install
+```$ ./bin/install```
 
-//générer les releases notes
+generate releases notes
 
-$ cd mon-projet
+```$ cd mon-projet```
 
-$ git-release-notes <tag_v1>..<tag_v2> ../ADTools/git-release-notes/ad_markdown.ejs > changelog.markdown
+```$ git-release-notes <tag_v1>..<tag_v2> ../ADTools/git-release-notes/ad_markdown.ejs > changelog.markdown```
 
-***Abandoned strings***
+## Abandoned strings
 
-//Restez dans ce dossier et renseignez le path de votre projet iOS (le dossier)
+Launch this command in this current directory and indicate the path to your iOS workspace
 
-$ ./AbandonedStrings /Users/your-username/path/to/source/code
+```$ ./AbandonedStrings /Users/your-username/path/to/source/code```
 
-***Generate wording file from an iOS .strings or an Android XML file***
+## Generate wording file from an iOS .strings or an Android XML file
 
-// Utilisez la commande ./bin/generate_wording_ios pour iOS, résultat dans wording_iOS
-// Utilisez la commande ./bin/generate_wording_android pour Android, résultat dans wording_android
+Copy wording file (.strings or .xml) in the current directory and launch the appropriate command
+Output file will be in directory `wording_ios` or `wording_android`
 
-***Update wording***
+```$ ./bin/generate_wording_ios```
 
-//copier-coller le script "update_wording" dans le dossier de votre appli iOS, l'ouvrir
-// remplacer $DRIVE_WORDING_FILE_KEY, $PROJECT_NAME, $TARGET_NAME par les valeurs correspondant au projet
-// pour lancer la commande, faire ./update_wording
-// NB : vous devez avoir cloné ADLocalize dans votre dossier Sources et fait bundle install 
+```$ ./bin/generate_wording_android```
+
+## Update wording
+
+Install gem `ADLocalize`
+
+Copy-paste `update_wording` in your iOS project directory, then open it
+
+Set $DRIVE_WORDING_FILE_KEY, $PROJECT_NAME, $TARGET_NAME
+
+To execute script
+
+```$ ./update_wording```
