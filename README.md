@@ -10,7 +10,7 @@ $ cd mon-projet
 
 $ git-release-notes <tag_v1>..<tag_v2> ../ADTools/git-release-notes/ad_markdown.ejs > changelog.markdown
 
-***Abandonned strings***
+***Abandoned strings***
 
 //Restez dans ce dossier et renseignez le path de votre projet iOS (le dossier)
 
